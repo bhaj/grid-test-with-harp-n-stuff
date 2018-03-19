@@ -1,0 +1,18 @@
+{
+  "name": "grid3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "harp server src & browser-sync start --proxy 'localhost:9000' --files 'src/**'",
+    "compile": "harp compile src www",
+    "setup": "mkdir src & touch src/404.jade src/index.jade src/_layout.jade src/main.sass & echo '.DS_Store\n*.swp\n**/*.swp\npackage-lock.json\nnode_modules/' >> .gitignore"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "harp": "^0.25.0"
+  }
+}
